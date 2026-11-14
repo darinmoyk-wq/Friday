@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#000000">
+<title>FRIDAY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stars"></div>
+<div id="hud">
+  <div class="ring ring1"></div>
+  <div class="ring ring2"></div>
+  <div class="ring ring3"></div>
+  <div class="scanline"></div>
+</div>
+
+<div id="stage">
+  <div id="face" class="neutral">
+    <div class="brow left"></div>
+    <div class="brow right"></div>
+    <div class="eye left"><div class="pupil"></div><div class="glow"></div></div>
+    <div class="eye right"><div class="pupil"></div><div class="glow"></div></div>
+    <div class="mouth"><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div><div class="bar b5"></div></div>
+  </div>
+  <div id="status">FRIDAY</div>
+</div>
+
+<div id="image-view" class="hidden"><img id="generated-image" alt=""><div id="image-close">✕</div></div>
+
+<div id="key-setup" class="hidden">
+  <div class="setup-box">
+    <h2>FRIDAY ACTIVATION</h2>
+    <p>Paste your keys. They are stored only on this device.</p>
+    <input type="password" id="gemini-key" placeholder="Google AI Studio (Gemini) API key">
+    <input type="password" id="elevenlabs-key" placeholder="ElevenLabs API key (optional)">
+    <input type="password" id="voice-id" placeholder="ElevenLabs voice ID (optional)">
+    <button id="save-keys">ACTIVATE FRIDAY</button>
+    <button id="skip-keys">OFFLINE MODE</button>
+  </div>
+</div>
+
+<input type="file" id="file-input" accept=".txt,.md,.json,.csv,.log,.js,.py,.html,.css" multiple hidden>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
